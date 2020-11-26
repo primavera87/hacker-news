@@ -1,0 +1,61 @@
+{
+  "name": "react-hacker-news",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.5",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "emotion-theming": "^10.0.27",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "react-waypoint": "^9.0.3",
+    "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "msw": "^0.19.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "preserve": "npm run build",
+    "serve": "serve -s build",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
+    "prettier": "prettier --ignore-path .gitignore \"./**/*.{js,jsx,ts,tsx}\"",
+    "format": "npm run prettier --write",
+    "format:check": "npm run prettier --check",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
